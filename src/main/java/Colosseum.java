@@ -103,6 +103,12 @@ public class Colosseum {
      *         <p>
      */
     public static Pokemon buildPokemon() {
+        int input = myScan.nextInt();
+        System.out.println("Enter 1 for Electric Pokemon, 2 for Fire Pokemon," +
+                " or 3 for Water Pokemon");
+        while (input != 1 && input != 2 && input != 3) {
+            System.out.println("Re-enter valid type");
+        }
         Pokemon returnPokemon = null;
         return returnPokemon;
     }
